@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Animated Login & Signup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="LoginSignUp.css" />
+  <link rel="stylesheet" href="/HomePage/HomePage.css" />
+  <link rel="stylesheet" href="/HomePage/Footer.css" />
+  <script src="LoginSignUp.js" defer></script>
+</head>
+<body>
+
+<!--Start Nav Bar-->
+  <!-- Navbar -->
+  <div class="navbarclass"> 
+    <nav class="navbar">
+      <!-- Logo -->
+      <a href="#" class="logo-link">
+        <img src="/Image For Homepage/OurFreeDoctor.png" alt="Our Free Doctor Logo">
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Nav Links -->
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Program Care</a></li>
+        <li><a href="#">Consultation</a></li>
+        <li><a href="#">Booking</a></li>
+        <li><a href="#">Blood Donor</a></li>
+
+        <!-- Department Dropdown -->
+        <li class="dropdown">
+          <a href="#">Department ▾</a>
+          <ul>
+            <li><a href="#">Asthma</a></li>
+            <li><a href="#">TB</a></li>
+            <li><a href="#">COPD</a></li>
+            <li><a href="#">Physical Medicine</a></li>
+            <li><a href="#">Surgery Pain</a></li>
+            <li><a href="#">Gynae</a></li>
+            <li><a href="#">Cancer</a></li>
+            <li><a href="#">Paediatrics</a></li>
+            <li><a href="#">Orthopaedics</a></li>
+            <li><a href="#">Dental</a></li>
+            <li><a href="#">Eye</a></li>
+          </ul>
+        </li>
+
+        <!-- Login/Signup Dropdown -->
+        <li class="dropdown">
+          <a href="#">Login/Signup ▾</a>
+          <ul>
+            <li><a href="#">Patient</a></li>
+            <li><a href="#">Doctor</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+<!--End Nav Bar-->
+
+
+  <main class="page">
+    <section class="auth">
+      <div class="card" id="authCard" aria-live="polite">
+        <!-- Left panel (copy / toggle) -->
+        <aside class="panel">
+          <div class="panel-inner">
+            <h1 class="brand">Welcome</h1>
+            <p class="subtitle">Sign in to continue or create a new account.</p>
+
+            <div class="toggle-group" role="tablist" aria-label="Auth toggle">
+              <button id="showLoginBtn" class="toggle is-active" role="tab" aria-selected="true" aria-controls="loginView">
+                Login
+              </button>
+              <button id="showSignupBtn" class="toggle" role="tab" aria-selected="false" aria-controls="signupView">
+                Sign Up
+              </button>
+            </div>
+
+            <ul class="bullets">
+              
+            </ul>
+          </div>
+        </aside>
+
+        <!-- Sliding container holding both forms -->
+        <div class="forms">
+          <!-- LOGIN -->
+          <section id="loginView" class="form-tab" role="tabpanel" aria-labelledby="showLoginBtn">
+            <h2 class="title">Login</h2>
+
+            <div class="socials">
+              <a href="#" class="social-btn" aria-label="Continue with Google">
+                <!-- Google SVG -->
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.8 10.023h-9.6v3.954h5.506c-.238 1.28-1.413 3.76-5.506 3.76-3.316 0-6.02-2.74-6.02-6.12s2.705-6.12 6.02-6.12c1.894 0 3.168.8 3.894 1.493l2.652-2.56C17.558 2.85 15.12 1.8 12.2 1.8 6.94 1.8 2.7 6.04 2.7 11.3s4.24 9.5 9.5 9.5c5.468 0 9.08-3.842 9.08-9.252 0-.62-.08-1.08-.18-1.525z"/></svg>
+                <span>Google</span>
+              </a>
+              <a href="#" class="social-btn" aria-label="Continue with Facebook">
+                <!-- FB -->
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3h-3.1V8.5c0-.9.3-1.5 1.6-1.5H17V4.3c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4v2.8H8v3h2.6v8h2.9z"/></svg>
+                <span>Facebook</span>
+              </a>
+              <a href="#" class="social-btn" aria-label="Continue with Twitter">
+                <!-- X/Twitter -->
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.6 3H22l-6.6 7.6L22.4 21H16l-4.2-5.6L7 21H1.6l7.3-8.4L1.2 3H7l3.8 5 4.8-5z"/></svg>
+                <span>Twitter</span>
+              </a>
+              <a href="#" class="social-btn" aria-label="Continue with Instagram">
+                <!-- Instagram -->
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.2 2.4.4.6.2 1 .5 1.5.9.4.4.7.9.9 1.5.2.5.3 1.2.4 2.4.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.9-.4 2.4-.2.6-.5 1-1 1.5-.4.4-.9.7-1.5.9-.5.2-1.2.3-2.4.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.2-2.4-.4-.6-.2-1.1-.5-1.5-.9-.5-.4-.8-.9-1-1.5-.2-.5-.3-1.2-.4-2.4C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.9.4-2.4.2-.6.5-1.1.9-1.5.4-.5.9-.8 1.5-1 .5-.2 1.2-.3 2.4-.4C8.4 2.2 8.8 2.2 12 2.2m0 1.8c-3.1 0-3.5 0-4.8.1-1 .1-1.5.2-1.8.3-.5.2-.8.4-1.1.8-.3.3-.6.7-.8 1.1-.1.3-.3.8-.3 1.8-.1 1.3-.1 1.7-.1 4.8s0 3.5.1 4.8c.1 1 .2 1.5.3 1.8.2.4.4.8.8 1.1.3.3.7.6 1.1.8.3.1.8.3 1.8.3 1.3.1 1.7.1 4.8.1s3.5 0 4.8-.1c1 0 1.5-.2 1.8-.3.4-.2.8-.4 1.1-.8.3-.3.6-.7.8-1.1.1-.3.3-.8.3-1.8.1-1.3.1-1.7.1-4.8s0-3.5-.1-4.8c0-1-.2-1.5-.3-1.8-.2-.4-.4-.8-.8-1.1-.3-.4-.7-.6-1.1-.8-.3-.1-.8-.3-1.8-.3-1.3 0-1.7-.1-4.8-.1zm0 3.1a5.9 5.9 0 110 11.8 5.9 5.9 0 010-11.8zm0 2a3.9 3.9 0 100 7.8 3.9 3.9 0 000-7.8zm5-2.2a1.1 1.1 0 110 2.2 1.1 1.1 0 010-2.2z"/></svg>
+                <span>Instagram</span>
+              </a>
+            </div>
+
+            <form id="loginForm" novalidate>
+              <label class="field">
+                <span>Email or Phone</span>
+                <input type="text" name="identifier" inputmode="email" autocomplete="username" required placeholder="you@example.com or +88 012 3456 7890" />
+                <small class="error"></small>
+              </label>
+
+              <label class="field password-field">
+                <span>Password</span>
+                <input type="password" name="password" autocomplete="current-password" minlength="6" required placeholder="••••••••" />
+                <button type="button" class="reveal" aria-label="Show password"></button>
+                <small class="error"></small>
+              </label>
+
+              <div class="row between">
+                <label class="checkbox">
+                  <input type="checkbox" name="remember" />
+                  <span>Remember me</span>
+                </label>
+                <a href="#" class="link">Forgot password?</a>
+              </div>
+
+              <button class="primary" type="submit">Login</button>
+            </form>
+          </section>
+
+          <!-- SIGNUP -->
+          <section id="signupView" class="form-tab" role="tabpanel" aria-labelledby="showSignupBtn" hidden>
+            <h2 class="title">Create Account</h2>
+
+             <div class="socials">
+              <a href="#" class="social-btn" aria-label="Continue with Google">
+                <!-- Google SVG -->
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.8 10.023h-9.6v3.954h5.506c-.238 1.28-1.413 3.76-5.506 3.76-3.316 0-6.02-2.74-6.02-6.12s2.705-6.12 6.02-6.12c1.894 0 3.168.8 3.894 1.493l2.652-2.56C17.558 2.85 15.12 1.8 12.2 1.8 6.94 1.8 2.7 6.04 2.7 11.3s4.24 9.5 9.5 9.5c5.468 0 9.08-3.842 9.08-9.252 0-.62-.08-1.08-.18-1.525z"/></svg>
+                <span>Google</span>
+              </a>
+              <a href="#" class="social-btn" aria-label="Continue with Facebook">
+                <!-- FB -->
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3h-3.1V8.5c0-.9.3-1.5 1.6-1.5H17V4.3c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4v2.8H8v3h2.6v8h2.9z"/></svg>
+                <span>Facebook</span>
+              </a>
+              <a href="#" class="social-btn" aria-label="Continue with Twitter">
+                <!-- X/Twitter -->
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.6 3H22l-6.6 7.6L22.4 21H16l-4.2-5.6L7 21H1.6l7.3-8.4L1.2 3H7l3.8 5 4.8-5z"/></svg>
+                <span>Twitter</span>
+              </a>
+              <a href="#" class="social-btn" aria-label="Continue with Instagram">
+                <!-- Instagram -->
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.2 2.4.4.6.2 1 .5 1.5.9.4.4.7.9.9 1.5.2.5.3 1.2.4 2.4.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.9-.4 2.4-.2.6-.5 1-1 1.5-.4.4-.9.7-1.5.9-.5.2-1.2.3-2.4.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.2-2.4-.4-.6-.2-1.1-.5-1.5-.9-.5-.4-.8-.9-1-1.5-.2-.5-.3-1.2-.4-2.4C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.9.4-2.4.2-.6.5-1.1.9-1.5.4-.5.9-.8 1.5-1 .5-.2 1.2-.3 2.4-.4C8.4 2.2 8.8 2.2 12 2.2m0 1.8c-3.1 0-3.5 0-4.8.1-1 .1-1.5.2-1.8.3-.5.2-.8.4-1.1.8-.3.3-.6.7-.8 1.1-.1.3-.3.8-.3 1.8-.1 1.3-.1 1.7-.1 4.8s0 3.5.1 4.8c.1 1 .2 1.5.3 1.8.2.4.4.8.8 1.1.3.3.7.6 1.1.8.3.1.8.3 1.8.3 1.3.1 1.7.1 4.8.1s3.5 0 4.8-.1c1 0 1.5-.2 1.8-.3.4-.2.8-.4 1.1-.8.3-.3.6-.7.8-1.1.1-.3.3-.8.3-1.8.1-1.3.1-1.7.1-4.8s0-3.5-.1-4.8c0-1-.2-1.5-.3-1.8-.2-.4-.4-.8-.8-1.1-.3-.4-.7-.6-1.1-.8-.3-.1-.8-.3-1.8-.3-1.3 0-1.7-.1-4.8-.1zm0 3.1a5.9 5.9 0 110 11.8 5.9 5.9 0 010-11.8zm0 2a3.9 3.9 0 100 7.8 3.9 3.9 0 000-7.8zm5-2.2a1.1 1.1 0 110 2.2 1.1 1.1 0 010-2.2z"/></svg>
+                <span>Instagram</span>
+              </a>
+            </div>
+            <form id="signupForm" novalidate>
+              <div class="row gap">
+                <label class="field">
+                  <span>Full Name</span>
+                  <input type="text" name="name" autocomplete="name" required placeholder="Your Name" />
+                  <small class="error"></small>
+                </label>
+              </div>
+
+              <label class="field">
+                <span>Email</span>
+                <input type="email" name="email" autocomplete="email" required placeholder="you@example.com" />
+                <small class="error"></small>
+              </label>
+
+              <label class="field">
+                <span>Phone (optional)</span>
+                <input type="tel" name="phone" inputmode="tel" autocomplete="tel" placeholder="+88 012 3456 7890" />
+                <small class="error"></small>
+              </label>
+
+              <label class="field password-field">
+                <span>Password</span>
+                <input type="password" name="password" autocomplete="new-password" minlength="6" required placeholder="At least 6 characters" />
+                <button type="button" class="reveal" aria-label="Show password"></button>
+                <small class="error"></small>
+              </label>
+
+              <label class="field password-field">
+                <span>Confirm Password</span>
+                <input type="password" name="confirm" autocomplete="new-password" minlength="6" required placeholder="Re-enter password" />
+                <button type="button" class="reveal" aria-label="Show password"></button>
+                <small class="error"></small>
+              </label>
+
+              <label class="checkbox">
+                <input type="checkbox" name="terms" required />
+                <span>I agree to the <a class="link" href="#">Terms & Privacy</a></span>
+              </label>
+
+              <button class="primary" type="submit">Sign Up</button>
+            </form>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+
+  <!--Start Footer Section-->
+
+    <div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column-left">
+                <div class="footer-logo">
+                    <img src="../Image For Homepage/OurFreeDoctor.png" alt="DocTime Logo">
+                </div>
+                <p>Our Free Doctor is the number 1 healthcare service provider in Bangladesh, based on one million downloads and ratings on the Play Store.</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone-alt"></i>09607796699</p>
+                    <p><i class="fas fa-envelope"></i>support@doctime.com.bd</p>
+                </div>
+
+                <div class="social-icons">
+                  <a href="#"><img src="../Image For Homepage/Facebook.webp" alt="Facebook"></a>
+                  <a href="#"><img src="../Image For Homepage/Twitter.webp" alt="Twitter"></a>
+                  <a href="#"><img src="../Image For Homepage/Linkedin.webp" alt="LinkedIn"></a>
+                  <a href="#"><img src="../Image For Homepage/Instagram.webp" alt="Instagram"></a>
+                  <a href="#"><img src="../Image For Homepage/Youtube.webp" alt="YouTube"></a>
+                </div>
+            </div>
+            <div class="footer-column-center">
+                <ul>
+                    <li><a href="#">Video Consultation</a></li>
+                    <li><a href="#">Health Plans</a></li>
+                    <li><a href="#">Data & Research</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Terms of Services</a></li>
+                    <li><a href="#">Hospital Partners</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">CareGlobal</a></li>
+                    <li><a href="#">Employers & NGOs</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Our Doctors</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Home Diagnostics</a></li>
+                    <li><a href="#">For Doctors</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Our Mission and Vision</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </footer>
+    </div>
+
+<!--End Footer Section-->
+
+</body>
+</html>
