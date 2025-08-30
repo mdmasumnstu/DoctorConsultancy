@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="../HomePage/HomePage.css">
+    <link rel="stylesheet" type="text/css" href="Contact.css">
+    <link rel="stylesheet" type="text/css" href="../HomePage/Footer.css">
+
+    <script src="Contact.js"></script>
+
+</head>
+<body>
+  <!--Start Nav Bar-->
+  <!-- Navbar -->
+  <div class="navbarclass"> 
+    <nav class="navbar">
+      <!-- Logo -->
+      <a href="#" class="logo-link">
+        <img src="/Image For Homepage/OurFreeDoctor.png" alt="Our Free Doctor Logo">
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Nav Links -->
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Program Care</a></li>
+        <li><a href="#">Consultation</a></li>
+        <li><a href="#">Booking</a></li>
+        <li><a href="#">Blood Donor</a></li>
+
+        <!-- Department Dropdown -->
+        <li class="dropdown">
+          <a href="#">Department ▾</a>
+          <ul>
+            <li><a href="#">Asthma</a></li>
+            <li><a href="#">TB</a></li>
+            <li><a href="#">COPD</a></li>
+            <li><a href="#">Physical Medicine</a></li>
+            <li><a href="#">Surgery Pain</a></li>
+            <li><a href="#">Gynae</a></li>
+            <li><a href="#">Cancer</a></li>
+            <li><a href="#">Paediatrics</a></li>
+            <li><a href="#">Orthopaedics</a></li>
+            <li><a href="#">Dental</a></li>
+            <li><a href="#">Eye</a></li>
+          </ul>
+        </li>
+
+        <!-- Login/Signup Dropdown -->
+        <li class="dropdown">
+          <a href="#">Login/Signup ▾</a>
+          <ul>
+            <li><a href="#">Patient</a></li>
+            <li><a href="#">Doctor</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  
+<div class="Contact-Us">
+    <section class="contact-section">
+        <h1>Contact <span>Us</span></h1>
+        <div class="underline"></div>
+        <p>Our support staff is available for help!</p>
+
+        <div class="contact-boxes-container">
+            <!-- Head Office -->
+            <div class="contact-box">
+                <i class="head office"></i>
+                <h3>Head Office</h3>
+                <p>Banani, Dhaka, Bangladesh</p>
+                <p>Road No.-02, Primary School Side</p>
+                <p>📞 +880 1581-628474</p>
+            </div>
+
+            <!-- Branch Office -->
+            <div class="contact-box">
+                <i class="branch office"></i>
+                <h3>Branch Office</h3>
+                <p>Maijdee Road, Noakhali Sadar</p>
+                <p>Bangladesh</p>
+                <p>📞 +880 1751-397444</p>
+            </div>
+
+            <!-- Mailing Address -->
+            <div class="contact-box">
+                <i class="mailing address"></i>
+                <h3>Mailing Address</h3>
+                <p><a href="mailto:mdmasumice@gmail.com">mdmasumice@gmail.com</a></p>
+                <p>📞 +880 1751-397444</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map and Contact Form Container -->
+    <div class="main-content-container">
+        <!-- Map Box -->
+        <div class="large-box">
+            <h2>Our Location</h2>
+            <div class="map-box">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2673.574453915446!2d90.41420391404486!3d23.785447919171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1755882527603!5m2!1sen!2sus" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Contact Form Box -->
+        <div class="large-box">
+            <h2>Get in touch with us</h2>
+            <p>We're here to help. Send your query or question below and provide us with as much detail as possible. We will answer your query as soon as possible. We aim to reply to your query within 24 hours.</p>
+            
+            <form id="contactForm">
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Name *" required>
+                    <input type="email" name="email" placeholder="Email *" required>
+                </div>
+                <select name="concern">
+                    <option value="">What is your concern?</option>
+                    <option value="appointment">Book an Appointment</option>
+                    <option value="consultation">Online Consultation</option>
+                    <option value="feedback">Feedback</option>
+                </select>
+                <textarea name="message" rows="6" placeholder="Your query *" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column-left">
+                <div class="footer-logo">
+                    <img src="../Image For Homepage/OurFreeDoctor.png" alt="DocTime Logo">
+                </div>
+                <p>Our Free Doctor is the number 1 healthcare service provider in Bangladesh, based on one million downloads and ratings on the Play Store.</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone-alt"></i>09607796699</p>
+                    <p><i class="fas fa-envelope"></i>support@doctime.com.bd</p>
+                </div>
+
+                <div class="social-icons">
+                  <a href="#"><img src="../Image For Homepage/Facebook.webp" alt="Facebook"></a>
+                  <a href="#"><img src="../Image For Homepage/Twitter.webp" alt="Twitter"></a>
+                  <a href="#"><img src="../Image For Homepage/Linkedin.webp" alt="LinkedIn"></a>
+                  <a href="#"><img src="../Image For Homepage/Instagram.webp" alt="Instagram"></a>
+                  <a href="#"><img src="../Image For Homepage/Youtube.webp" alt="YouTube"></a>
+                </div>
+            </div>
+            <div class="footer-column-center">
+                <ul>
+                    <li><a href="#">Video Consultation</a></li>
+                    <li><a href="#">Health Plans</a></li>
+                    <li><a href="#">Data & Research</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Terms of Services</a></li>
+                    <li><a href="#">Hospital Partners</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">CareGlobal</a></li>
+                    <li><a href="#">Employers & NGOs</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Our Doctors</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Home Diagnostics</a></li>
+                    <li><a href="#">For Doctors</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Our Mission and Vision</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </footer>
+    </div>
+
+<!--End Footer Section-->
+</body>
+</html>
