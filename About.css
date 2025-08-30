@@ -1,0 +1,547 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 10%;   /* আগে 80px ছিল, এখন কমিয়ে দেওয়া হলো */
+  background: lch(72.43% 43.13 239.98);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+
+.about-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  border-top-left-radius: 200px;
+}
+
+.about-content {
+  flex: 1;
+  min-width: 280px;
+  max-width: 600px;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease forwards;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 10px;
+}
+
+.breadcrumb .active {
+  font-weight: bold;
+  color: #fff;
+}
+
+.about-content h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 280px;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 0.4s; /* image appears after text */
+}
+
+.about-image img {
+  max-width: 400px;
+  width: 70%;
+  height: 350px;
+}
+
+
+
+
+
+
+
+
+.our-free-doctor-container {
+    display: flex;
+    align-items: center; /* Vertically centers the content */
+    padding: 50px 20px;
+    background-color: #f8f9fa; /* Light grey background similar to the image */
+}
+
+.our-free-doctor-image-section {
+    flex: 1; /* Takes up one part of the flexible space */
+    padding-right: 20px; /* Adds some space between the image and text */
+}
+
+.our-free-doctor-image-section img {
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto;
+    display: block; /* Removes any extra space below the image */
+}
+
+.our-free-doctor-text-section {
+    flex: 1; /* Takes up the other part of the flexible space */
+    padding-left: 20px;
+}
+
+.our-free-doctor-text-section h2 {
+    font-size: 2.5em; /* Adjust font size to match the image */
+    font-weight: bold;
+    color: #333;
+}
+
+.our-free-doctor-text-section p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*mission and vission*/
+.mission-vision-container {
+    background-color: #f0f8ff; /* A light blue background color */
+    padding: 50px 20px;
+    text-align: left;
+}
+
+.mission-vision-container h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.mission-vision-content {
+    display: flex;
+    justify-content: center; /* Centers the columns horizontally */
+    gap: 400px; /* Space between the columns */
+    flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+}
+
+.column {
+    flex: 1; /* Allows columns to grow and fill space */
+    max-width: 450px; /* A max width for larger screens */
+    padding: 20px;
+    text-align: left; /* Align text within columns to the left */
+}
+
+.column .icon {
+    width: 60px; /* Size of the icon */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.column h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.column p {
+    font-size: 1em;
+    line-height: 1.6;
+    color:black;
+    line-break: auto;
+}
+
+
+
+
+
+/*Our Free Doctor Everyone */
+.our-free-doctor-services-container {
+    display: flex;
+    background-color: #fff;
+    padding: 50px 0; /* Add padding to top/bottom */
+}
+
+.our-free-doctor-text-section {
+    flex: 1; /* Takes up one part of the flexible space */
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically centers the content */
+}
+
+.our-free-doctor-text-section h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.our-free-doctor-text-section ul {
+    list-style-type: none; /* Removes default bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.our-free-doctor-text-section ul li {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #110202;
+}
+
+.our-free-doctor-text-section ul li strong {
+    color: hsl(0, 78%, 2%);
+}
+
+
+.our-free-doctor-image-section {
+    flex: 1; /* Takes up the other part of the flexible space */
+}
+
+.our-free-doctor-image-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+
+/*Our Free Doctor for Doctor
+.our-free-doctor-for-doctors-container {
+    display: flex;
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.our-free-doctor-image-section {
+    flex: 1; /* Takes up one part of the flexible space */
+
+.our-free-doctor-for-doctors-container {
+    display: flex;
+    background-color:hwb(160 87% 2%);
+    padding: 50px 0;
+}
+
+.our-free-doctor-image-section-for-doctor {
+    flex: 1; /* Takes up one part of the flexible space */
+}
+
+.our-free-doctor-image-section-for-doctor img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.our-free-doctor-text-section-for-doctor {
+    flex: 1; /* Takes up the other part of the flexible space */
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically centers the content */
+}
+
+.our-free-doctor-text-section-for-doctor h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.our-free-doctor-text-section-for-doctor ul {
+    list-style-type: none; /* Removes default bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.our-free-doctor-text-section-for-doctor ul li {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.our-free-doctor-text-section-for-doctor ul li strong {
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+.our-free-doctor-healthcare-section {
+  background-color: #f7f9fc;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.our-free-doctor-healthcare-section h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 60px; 
+  color: #1a202c;
+}
+
+.column-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.column {
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  padding: 20px;
+}
+
+.icon-placeholder {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+  border: 2px solid #a0aec0;
+  border-radius: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* You can replace this placeholder with an actual SVG icon */
+}
+
+.column h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #2d3748;
+}
+
+.column p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #4a5568;
+}
+
+
+
+
+.OurFreeDoctor-econsult-features {
+  padding: 50px 20px;
+  background-color: #c4dbf3; /* Light gray background */
+  text-align: center;
+}
+
+.OurFreeDoctor-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.OurFreeDoctor-section-title {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 50px;
+}
+
+.OurFreeDoctor-features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* Space between columns */
+}
+
+.OurFreeDoctor-feature {
+  flex: 1 1 30%; /* Allows items to grow/shrink and sets a base width */
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+.OurFreeDoctor-feature-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background-color: #e6f7ff; /* Placeholder background for the icon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Ensures the image fits within the circular container */
+}
+
+.OurFreeDoctor-feature-icon img {
+  width: 100%;
+  height: auto;
+}
+
+.OurFreeDoctor-feature h3 {
+  font-size: 1.5em;
+  color: #007bff; /* A blue color for the heading */
+  margin-bottom: 15px;
+}
+
+.OurFreeDoctor-feature p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .OurFreeDoctor-features-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .OurFreeDoctor-feature {
+    flex: 1 1 100%;
+    max-width: 400px; /* Optional: to prevent them from stretching too wide on mobile */
+  }
+}
+
+
+
+
+
+/* ✅ Animations */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 900px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .about-content {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .about-content h1 {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+
+  .about-image img {
+    max-width: 300px;
+  }
+
+  .about-section::after {
+    width: 120px;
+    height: 120px;
+    border-top-left-radius: 120px;
+  }
+}
+
+
+
+@media (max-width: 500px) {
+  .about-content h1 {
+    font-size: 26px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .about-image img {
+    max-width: 250px;
+  }
+}
+
+
+
+/* For smaller screens, stack the columns vertically */
+@media (max-width: 768px) {
+
+    .our-free-doctor-container {
+        flex-direction: column;
+    }
+    .our-free-doctor-image-section,
+    .our-free-doctor-text-section {
+        padding: 0;
+        text-align: center;
+    }
+    .our-free-doctor-image-section {
+        margin-bottom: 30px;
+    }
+
+
+     .column {
+        flex-basis: 100%; /* Columns stack vertically on smaller screens */
+        text-align: center;
+        margin-bottom: 30px;
+        flex: 1;
+    }
+
+    .column .icon {
+        margin: 0 auto 20px; /* Center the icon on smaller screens */
+    }
+
+    .our-free-doctor-services-container {
+        flex-direction: column;
+    }
+    .our-free-doctor-text-section {
+        padding: 20px;
+    }
+
+
+    .our-free-doctor-for-doctors-container {
+        flex-direction: column;
+    }
+    .our-free-doctor-text-section-for-doctor {
+        padding: 20px;
+    }
+
+
+}
+
