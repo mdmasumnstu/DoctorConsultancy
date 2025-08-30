@@ -1,0 +1,349 @@
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-image: url("../Features/Features Image/Doctor Image.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 102, 204, 0.5); /* Semi-transparent blue overlay */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    font-weight: 300;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+.hero-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 3;
+    padding-right: 5%;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 45px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.footer-link:first-child {
+    margin-left: 0;
+}
+
+.footer-link i {
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+.appointment-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 18px;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.text-content h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.underline {
+    width: 60px;
+    height: 4px;
+    background-color: #fbc02d; /* Yellow color */
+    margin-bottom: 25px;
+}
+
+.text-content p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+}
+
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+    .appointment-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .text-content {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+
+
+
+.consultation-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #7ACBE4;
+    border-radius: 8px;
+    padding: 40px;
+}
+
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-content {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.text-content h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.underline {
+    width: 60px;
+    height: 4px;
+    background-color: #fbc02d; /* Yellow color */
+    margin-bottom: 25px;
+}
+
+.text-content p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+    .consultation-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .image-content {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    
+    .text-content {
+        padding-left: 0;
+    }
+}
+
+
+
+
+
+
+.ehr-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 40px;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.text-content h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.underline {
+    width: 60px;
+    height: 4px;
+    background-color: #fbc02d; /* Yellow color */
+    margin-bottom: 25px;
+}
+
+.text-content p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+}
+
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+    .ehr-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .text-content {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+
+
+.eprescription-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F9FBFF;
+    border-radius: 8px;
+    padding: 40px;
+}
+
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-content {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.text-content h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.underline {
+    width: 60px;
+    height: 4px;
+    background-color: #fbc02d; /* Yellow color */
+    margin-bottom: 25px;
+}
+
+.text-content p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+    .eprescription-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .image-content {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    
+    .text-content {
+        padding-left: 0;
+    }
+}
