@@ -1,0 +1,291 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fff;
+  color: #333;
+}
+
+.specialists {
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+.specialists-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 30px;;
+}
+
+.specialists-header h2 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.view-all {
+  text-decoration: none;
+  font-size: 20px;
+  color: blue;
+  font-weight: 500;
+}
+
+/* Slider container */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.specialists-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto; /* allow smooth horizontal scroll */
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory; /* snap to each card */
+  -webkit-overflow-scrolling: touch;
+}
+
+.doctor-card {
+  flex: 0 0 300px;
+  background: #EEF5FF;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  scroll-snap-align: start; /* snap each card to left */
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+}
+
+.doctor-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 60%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.doctor-card h3 {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.degree {
+  font-size: 13px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.tags span {
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  margin: 2px;
+}
+
+.rating {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #f39c12;
+}
+
+.experience {
+  font-size: 13px;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.price del {
+  color: #888;
+  font-size: 13px;
+}
+
+.see-doctor {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Slider arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.arrow:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+.arrow.left {
+  left: -15px;
+}
+
+.arrow.right {
+  right: -15px;
+}
+
+@media (max-width: 768px) {
+  .doctor-card {
+    flex: 0 0 80%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+.specialties-section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+.header-specialties-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header-specialties-section h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.header-specialties-section p {
+  color: #6b7280;
+  font-size: 15px;
+  margin: 5px 0 0;
+}
+
+.view-all {
+  background-color: #e6f3ff;
+  color: #2a7de1;
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+/* Slider Container */
+.slider-container-specialties-section {
+  position: relative;
+  overflow: hidden;
+  margin-top: 25px;
+}
+
+.slider-specialties-section {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.slider-specialties-section::-webkit-scrollbar {
+  display: none;
+}
+
+.card-specialties-section {
+  flex: 0 0 auto;
+  width: 220px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 20px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.card-specialties-section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.card-specialties-section img {
+  width: 180px;
+  height: 140px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.card-specialties-section p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Navigation Buttons */
+.slide-btn-specialties-section {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background: #ffffff;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.slide-btn-specialties-section.left {
+  left: -10px;
+}
+
+.slide-btn-specialties-section.right {
+  right: -10px;
+}
+
+.slide-btn-specialties-section:hover {
+  background: #f0f0f0;
+}
+

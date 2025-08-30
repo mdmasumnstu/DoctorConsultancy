@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Free Doctor Second Page</title> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+     <link rel="stylesheet" type="text/css" href="/HomePage/OurTopDtor.css">
+     <link rel="stylesheet" type="text/css" href="Second Page.css">
+    <link rel="stylesheet" type="text/css" href="/HomePage/HomePage.css">
+    <link rel="stylesheet" type="text/css" href="/HomePage/Search_Section.css">
+    <link rel="stylesheet" type="text/css" href="/HomePage/Top Specialities.css">
+    <link rel="stylesheet" type="text/css" href="/HomePage/FAQs.css">
+    <link rel="stylesheet" type="text/css" href="/HomePage/Footer.css">
+
+    <script src="/HomePage/OurTopDoctor.js" defer></script>
+    <script src="Second Page.js" defer></script>
+</head>
+<body>
+   <!--Start Nav Bar-->
+  <!-- Navbar -->
+  <div class="navbarclass"> 
+    <nav class="navbar">
+      <!-- Logo -->
+      <a href="#" class="logo-link">
+        <img src="/Image For Homepage/OurFreeDoctor.png" alt="Our Free Doctor Logo">
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Nav Links -->
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Program Care</a></li>
+        <li><a href="#">Consultation</a></li>
+        <li><a href="#">Booking</a></li>
+        <li><a href="#">Blood Donor</a></li>
+
+        <!-- Department Dropdown -->
+        <li class="dropdown">
+          <a href="#">Department ▾</a>
+          <ul>
+            <li><a href="#">Asthma</a></li>
+            <li><a href="#">TB</a></li>
+            <li><a href="#">COPD</a></li>
+            <li><a href="#">Physical Medicine</a></li>
+            <li><a href="#">Surgery Pain</a></li>
+            <li><a href="#">Gynae</a></li>
+            <li><a href="#">Cancer</a></li>
+            <li><a href="#">Paediatrics</a></li>
+            <li><a href="#">Orthopaedics</a></li>
+            <li><a href="#">Dental</a></li>
+            <li><a href="#">Eye</a></li>
+          </ul>
+        </li>
+
+        <!-- Login/Signup Dropdown -->
+        <li class="dropdown">
+          <a href="#">Login/Signup ▾</a>
+          <ul>
+            <li><a href="#">Patient</a></li>
+            <li><a href="#">Doctor</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+<!--End Nav Bar-->
+<!--Start Search Section-->
+
+<div class="hero-section">
+    <section class="search-section">
+        <form action="/search" method="get" class="search-container">
+            <input type="text" name="query" placeholder="Search by Doctor Name/Code or Department">
+            <button type="submit" class="search-button">
+                <img src="../Image For Homepage/Search Icon.webp" alt="Search" height="20">
+                <span>Search</span>
+            </button>
+        </form>
+    </section>
+</div>
+<!--End Search Section-->
+<!--Start Our Top Doctor Section-->
+<section class="specialists">
+  <div class="specialists-header">
+    <h2>Popular Specialists</h2>
+    <a href="#" class="view-all">View All →</a>
+  </div>
+
+  <div class="slider-container">
+    <button class="arrow left" onclick="slideLeft()">❮</button>
+    <div class="specialists-container" id="slider">
+      
+      <!-- Doctor Card 1 -->
+      <div class="doctor-card">
+        <img src="/Second Page/Image For Second Page/dr-vinayak-agarwal.webp" alt="Dr. Shafiul" class="doctor-img">
+        <h3>Dr. Vinayak</h3>
+        <p class="degree">MBBS MAMC <br>MD UCMS <br>DNB Cardiology Escorts Heart Institute and Research Center</p>
+        <div class="tags">
+          <a href="#"><span>Medicine Specialist</span></a>
+          <a href="#"><span>Cardiology</span></a>
+        </div>
+        <div class="rating">⭐ 5 (857)</div>
+        <p class="experience">10+ Years Experience</p>
+        <div class="card-footer">
+          <span class="price">৳650</span>
+          <a href="#" class="see-doctor">See Doctor</a>
+        </div>
+      </div>
+
+      <!-- Doctor Card 2 -->
+      <div class="doctor-card">
+        <img src="/Second Page/Image For Second Page/harshvardhanDr.jpg" alt="Dr.Harshvardhan Deshpande" class="doctor-img">
+        <h3>Dr.Harshvardhan Deshpande</h3>
+        <p class="degree">MBBS, Rajshahi Medical College and Hospital</p>
+        <div class="tags">
+          <a href="#"><span>Cardiology</span></a>
+          <a href="#"><span>Surgery</span></a>
+        </div>
+        <div class="rating">⭐ 4.9 (1604)</div>
+        <p class="experience">11+ Years Experience</p>
+        <div class="card-footer">
+          <span class="price"><del>৳500</del> <strong>৳399</strong></span>
+          <a href="#" class="see-doctor">See Doctor</a>
+        </div>
+      </div>
+
+      <!-- Doctor Card 1 -->
+      <div class="doctor-card">
+        <img src="/Second Page/Image For Second Page/deepankarChaudharyDr.jpg" alt="Dr.Deepankar Chaudhary" class="doctor-img">
+        <h3>Dr.Deepankar Chaudhary</h3>
+        <p class="degree">MBBS, BCS (Health), MRCP (UK)</p>
+        <div class="tags">
+          <a href="#"><span>Medicine Specialist</span></a>
+          <a href="#"><span>Cancer</span></a>
+        </div>
+        <div class="rating">⭐ 5 (857)</div>
+        <p class="experience">10+ Years Experience</p>
+        <div class="card-footer">
+          <span class="price">৳650</span>
+          <a href="#" class="see-doctor">See Doctor</a>
+        </div>
+      </div>
+
+      <!-- Doctor Card 2 -->
+      <div class="doctor-card">
+        <img src="/Second Page/Image For Second Page/dr Masrun Mostafa.jpg" alt="Dr. Masrun" class="doctor-img">
+        <h3>Dr. Masrun Mostafa</h3>
+        <p class="degree">MBBS Mymensingh Medical College and Hospital<br>Departmental Head of Neuro-Medicine<br>Neuro-Medicine,Cambridge University</p>
+        <div class="tags">
+          <a href="#"><span>Neurologist</span></a>
+          <a href="#"><span>Phycologist</span></a>
+        </div>
+        <div class="rating">⭐ 4.9 (1604)</div>
+        <p class="experience">11+ Years Experience</p>
+        <div class="card-footer">
+          <span class="price"><del>৳500</del> <strong>৳399</strong></span>
+          <a href="#" class="see-doctor">See Doctor</a>
+        </div>
+      </div>
+
+      <div class="doctor-card">
+        <img src="/Second Page/Image For Second Page/drRajeev.jpg" alt="Dr. Masrun" class="doctor-img">
+        <h3>Dr. Rajeev</h3>
+        <p class="degree"> MBBS MAMC <br>
+         MD(Internal Medicine) Lady Hardinge Medical college <br>MBBS, Orthopedics</p>
+        <div class="tags">
+          <a href="#"><span>Orthopaedics</span></a>
+          <a href="#"><span>COPD</span></a>
+        </div>
+        <div class="rating">⭐ 4.9 (1604)</div>
+        <p class="experience">11+ Years Experience</p>
+        <div class="card-footer">
+          <span class="price"><del>৳500</del> <strong>৳399</strong></span>
+          <a href="#" class="see-doctor">See Doctor</a>
+        </div>
+      </div>
+
+
+      <div class="doctor-card">
+        <img src="/Second Page/Image For Second Page/dr Somaiya Jahan.jpg" alt="Dr. Masrun" class="doctor-img">
+        <h3>Dr. Somaiya Jahan</h3>
+        <p class="degree">MD (Paediatrics) MUHS, Nashik<br>
+         DNB (Paediatric) National Board of Examinations, New Delhi</p>
+        <div class="tags">
+          <a href="#"><span>Paediatric</span></a>
+        </div>
+        <div class="rating">⭐ 4.9 (1604)</div>
+        <p class="experience">11+ Years Experience</p>
+        <div class="card-footer">
+          <span class="price"><del>৳500</del> <strong>৳399</strong></span>
+          <a href="#" class="see-doctor">See Doctor</a>
+        </div>
+      </div>
+
+
+      <div class="doctor-card">
+        <img src="/Second Page/Image For Second Page/swatiKalraDr.jpg" alt="Dr. Swati" class="doctor-img">
+        <h3>Dr. Swati</h3>
+        <p class="degree">MBBS Lady Hardinge Medical College, Delhi<br>
+           MD Gynecology UCMS, Delhi University</p>
+        <div class="tags">
+          <a href="#"><span>Gynecologist</span></a>
+        </div>
+        <div class="rating">⭐ 4.9 (1604)</div>
+        <p class="experience">11+ Years Experience</p>
+        <div class="card-footer">
+          <span class="price"><del>৳500</del> <strong>৳399</strong></span>
+          <a href="#" class="see-doctor">See Doctor</a>
+        </div>
+      </div>
+
+
+      <div class="doctor-card">
+        <img src="/Second Page/Image For Second Page/amolWarhadeDr.jpg" alt="Dr.Amol Warhade" class="doctor-img">
+        <h3>Dr. Amol Warhade</h3>
+        <p class="degree">MBBS, Dhaka Medical College</p>
+        <div class="tags">
+         <a href="#"><span>Psychologist</span></a>
+        </div>
+        <div class="rating">⭐ 4.9 (1604)</div>
+        <p class="experience">11+ Years Experience</p>
+        <div class="card-footer">
+          <span class="price"><del>৳500</del> <strong>৳399</strong></span>
+          <a href="#" class="see-doctor">See Doctor</a>
+        </div>
+      </div>
+
+
+
+      <div class="doctor-card">
+        <img src="/Second Page/Image For Second Page/amitAshokDr.jpg" alt="Dr. Amit" class="doctor-img">
+        <h3>Dr. Amit</h3>
+        <p class="degree">MBBS, Dhaka Medical College <br>
+         Allergy Asthma Specialist Course (AASC) USA</p>
+        <div class="tags">
+          <a href="#"><span>Asthma Specialist</span></a>
+          <a href="#"><span>TB</span></a>
+          
+        </div>
+        <div class="rating">⭐ 4.9 (1604)</div>
+        <p class="experience">11+ Years Experience</p>
+        <div class="card-footer">
+          <span class="price"><del>৳500</del> <strong>৳399</strong></span>
+          <a href="#" class="see-doctor">See Doctor</a>
+        </div>
+      </div>
+
+      <div class="doctor-card">
+        <img src="/Second Page/Image For Second Page/amitAshokDr.jpg" alt="Dr. Amit" class="doctor-img">
+        <h3>Dr. Amit</h3>
+        <p class="degree">MBBS, Dhaka Medical College <br>
+         Eye Specialist Course, USA</p>
+        <div class="tags">
+          <a href="#"><span>Eye Specialist</span></a>      
+        </div>
+        <div class="rating">⭐ 4.9 (1604)</div>
+        <p class="experience">11+ Years Experience</p>
+        <div class="card-footer">
+          <span class="price"><del>৳500</del> <strong>৳399</strong></span>
+          <a href="#" class="see-doctor">See Doctor</a>
+        </div>
+      </div>
+
+      <div class="doctor-card">
+        <img src="/Second Page/Image For Second Page/dr akram khan.jpg" alt="Dr. Akram Khan" class="doctor-img">
+        <h3>Dr. Akram Khan</h3>
+        <p class="degree">MBBS, Dhaka Medical College <br>
+         Dental Specialist Course (AASC) USA</p>
+        <div class="tags">
+          <a href="#"><span>Dentistry</span></a>
+          
+        </div>
+        <div class="rating">⭐ 4.9 (1604)</div>
+        <p class="experience">11+ Years Experience</p>
+        <div class="card-footer">
+          <span class="price"><del>৳500</del> <strong>৳399</strong></span>
+          <a href="#" class="see-doctor">See Doctor</a>
+        </div>
+      </div>
+
+      <!-- Doctor Card 3 -->
+      <div class="doctor-card">
+        <img src="/Second Page/Image For Second Page/Dr Shakhawat Hossain.jpg" alt="Dr. Shahana" class="doctor-img">
+        <h3>Dr Shakhawat Hossain</h3>
+        <p class="degree"> MRCP UK<br>
+          Fellowship in Diabetes RCP, UK<br>MBBS, DEM (Endocrinology)</p>
+        <div class="tags">
+          <a href="#"><span>Endocrinologist</span></a>
+          <a href="#"><span>Diabetes</span></a>
+        </div>
+        <div class="rating">⭐ 4.9 (4353)</div>
+        <p class="experience">35+ Years Experience</p>
+        <div class="card-footer">
+          <span class="price">৳630</span>
+          <a href="#" class="see-doctor">See Doctor</a>
+        </div>
+      </div>
+
+    </div>
+    <button class="arrow right" onclick="slideRight()">❯</button>
+  </div>
+</section>
+
+<!--Start Find your Clinical Area-->
+  <section class="specialties-section">
+    <div class="header-specialties-section">
+      <div>
+        <h2>Top Specialties</h2>
+        <p>People have been looking for these specialties.</p>
+      </div>
+      <button class="view-all">VIEW ALL</button>
+    </div>
+
+    <!-- Slider Wrapper -->
+    <div class="slider-container-specialties-section">
+      <button class="slide-btn-specialties-section left">&#10094;</button>
+
+      <div class="slider-specialties-section" id="specialties-slider">
+        <div class="card-specialties-section">
+          <img src="../Image For Homepage/primary-care-and-general-medicine.png" alt="">
+          <p>Primary Care & General Medicine</p>
+        </div>
+        <div class="card-specialties-section">
+          <img src="../Image For Homepage/Gynecologist.jpg" alt="">
+          <p>OB-GYN's & Women's Health</p>
+        </div>
+        <div class="card-specialties-section">
+          <img src="../Image For Homepage/pediatrics.png" alt="">
+          <p>Pediatrics</p>
+        </div>
+        <div class="card-specialties-section">
+          <img src="../Image For Homepage/diabetes-and-endocrinology.png" alt="">
+          <p>Diabetes & Endocrinology</p>
+        </div>
+        <div class="card-specialties-section">
+          <img src="../Image For Homepage/Eye.jpeg" alt="">
+          <p>Eye & Vision Doctor</p>
+        </div>
+        <div class="card-specialties-section">
+          <img src="../Image For Homepage/cardiologyst.jpg" alt="">
+          <p>Heart & Cardiology</p>
+        </div>
+        <div class="card-specialties-section">
+          <img src="../Image For Homepage/skin-and-dermatology.png" alt="">
+          <p>Skin & Dermatology</p>
+        </div>
+        <div class="card-specialties-section">
+          <img src="../Image For Homepage/lungs-chest-and-pulmonology.png" alt="">
+          <p>Lungs, Chest & Pulmonology</p>
+        </div>
+        <div class="card-specialties-section">
+          <img src="../Image For Homepage/internal-medicine.png" alt="">
+          <p>Stomach, Digestion & Gastroenterology</p>
+        </div>
+        <div class="card-specialties-section">
+          <img src="../Image For Homepage/ENT.jpg" alt="">
+          <p>Ears, Nose & Throat</p>
+        </div>
+        <div class="card-specialties-section">
+          <img src="../Image For Homepage/Kidny.jpg" alt="">
+          <p>Kidney & Urine</p>
+        </div>
+        <div class="card-specialties-section">
+          <img src="../Image For Homepage/Neuro-Medicine.jpg" alt="">
+          <p>Brain & Nerves</p>
+        </div>
+      </div>
+
+      <button class="slide-btn-specialties-section right">&#10095;</button>
+    </div>
+  </section>
+  <!--End Top Specialties Section-->
+
+
+<!--Start Top Specialties Section-->
+
+<div>
+<section class="specialties-section">
+  <div class="header">
+    <div>
+      <h2>Common Conditions</h2>
+      <p>Easily access doctors treating these conditions</p>
+    </div>
+    <button class="view-all">VIEW ALL</button>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <img src="/Second Page/Image For Second Page/acne-and-eczema.png" alt="">
+      <p>Acne & Eczema</p>
+    </div>
+    <div class="card">
+      <img src="/Second Page/Image For Second Page/arthritis-and-gout.png" alt="">
+      <p>Arthrictis & Gout</p>
+    </div>
+    <div class="card">
+      <img src="/Second Page/Image For Second Page/back-pain.png" alt="">
+      <p>Back Pain</p>
+    </div>
+    <div class="card">
+      <img src="/Second Page/Image For Second Page/cancer.png" alt="">
+      <p>Cancer</p>
+    </div>
+    <div class="card">
+      <img src="/Second Page/Image For Second Page/depression-anxiety-and-mental-health.png" alt="">
+      <p>Depression, Anxiety & Mental Health</p>
+    </div>
+    <div class="card">
+      <img src="/Second Page/Image For Second Page/diabetes.png" alt="">
+      <p>Diabetes</p>
+    </div>
+    <div class="card">
+      <img src="/Second Page/Image For Second Page/diarrhea-hyperacidity-and-hemorrhoids.png" alt="">
+      <p>Diarrhea,Hyperacidity & Hemorrhoids</p>
+    </div>
+    <div class="card">
+      <img src="/Second Page/Image For Second Page/high-blood-pressure.png" alt="">
+      <p>High Blood Pressure (Hypertension)</p>
+    </div>
+    <div class="card">
+      <img src="/Second Page/Image For Second Page/urinary-tract-infection.png" alt="">
+      <p>UTI (Urinary Tract Infection)</p>
+    </div>
+    <div class="card">
+      <img src="/Second Page/Image For Second Page/polycystic-ovary-syndrome-and-menopause.png" alt="">
+      <p>Polycystic Ovary Syndrome & Menopause</p>
+    </div>
+    <div class="card">
+      <img src="/Second Page/Image For Second Page/headaches-and-migraine.png" alt="">
+      <p>Headaches & Migraine</p>
+    </div>
+    <div class="card">
+      <img src="/Second Page/Image For Second Page/hyperthyroidism-and-hypothyroidism.png" alt="">
+      <p>Hypertension & Hypothyroidism (Thyroid)</p>
+    </div>
+  </div>
+</section>
+</div>
+
+<!--End Top Specialties Section-->
+
+
+<!--Start FAQs Section-->
+
+        <div class="faq-container">
+        <h2>Frequently Asked Questions (FAQs):</h2>
+
+        <div class="faq-item">
+            <details>
+                <summary>How can I book an appointment with a doctor?</summary>
+                <p class="answer">You can easily book an appointment by navigating to our 'Booking' page and selecting your desired specialty, doctor, and a convenient time slot. You can choose for either an in-person or an online consultation.</p>
+            </details>
+        </div>
+
+        <div class="faq-item">
+            <details>
+                <summary>Is the online video consultation service reliable?</summary>
+                <p class="answer">Yes, our video consultation service is highly reliable. We use a secure and encrypted platform to ensure your privacy and provide a seamless communication experience with our doctors.</p>
+            </details>
+        </div>
+
+        <div class="faq-item">
+            <details>
+                <summary>How do I know if the doctors are qualified?</summary>
+                <p class="answer">All doctors on our platform are thoroughly vetted and are registered medical practitioners with years of experience in their respective fields. You can view their credentials and specialties on their profile pages.</p>
+            </details>
+        </div>
+
+        <div class="faq-item">
+            <details>
+                <summary>What is your cancellation policy?</summary>
+                <p class="answer">Appointments can be canceled up to 24 hours in advance for a full refund. For cancellations within 24 hours of the appointment, a cancellation fee may apply. Please check our terms and conditions for more details.</p>
+            </details>
+        </div>
+        
+        <div class="faq-item">
+            <details>
+                <summary>Can I get a prescription through video consultation?</summary>
+                <p class="answer">Yes, if a doctor deems it medically necessary, they can issue a digital prescription following your video consultation. The prescription will be available in your patient portal for you to download or print.</p>
+            </details>
+        </div>
+        
+        <div class="faq-item">
+            <details>
+                <summary>Do you offer emergency medical services?</summary>
+                <p class="answer">We are not an emergency service. For any medical emergency, please contact your local emergency services or visit the nearest hospital. Our platform is for non-emergency consultations and health advice.</p>
+            </details>
+        </div>
+    </div>
+
+<!--End FAQs Section-->
+<!--Start Footer Section-->
+
+    <div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column-left">
+                <div class="footer-logo">
+                    <img src="../Image For Homepage/OurFreeDoctor.png" alt="DocTime Logo">
+                </div>
+                <p>Our Free Doctor is the number 1 healthcare service provider in Bangladesh, based on one million downloads and ratings on the Play Store.</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone-alt"></i>09607796699</p>
+                    <p><i class="fas fa-envelope"></i>support@doctime.com.bd</p>
+                </div>
+
+                <div class="social-icons">
+                  <a href="#"><img src="../Image For Homepage/Facebook.webp" alt="Facebook"></a>
+                  <a href="#"><img src="../Image For Homepage/Twitter.webp" alt="Twitter"></a>
+                  <a href="#"><img src="../Image For Homepage/Linkedin.webp" alt="LinkedIn"></a>
+                  <a href="#"><img src="../Image For Homepage/Instagram.webp" alt="Instagram"></a>
+                  <a href="#"><img src="../Image For Homepage/Youtube.webp" alt="YouTube"></a>
+                </div>
+            </div>
+            <div class="footer-column-center">
+                <ul>
+                    <li><a href="#">Video Consultation</a></li>
+                    <li><a href="#">Health Plans</a></li>
+                    <li><a href="#">Data & Research</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Terms of Services</a></li>
+                    <li><a href="#">Hospital Partners</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">CareGlobal</a></li>
+                    <li><a href="#">Employers & NGOs</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Our Doctors</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Home Diagnostics</a></li>
+                    <li><a href="#">For Doctors</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Our Mission and Vision</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </footer>
+    </div>
+
+<!--End Footer Section-->
+
+</body>
+</html>
