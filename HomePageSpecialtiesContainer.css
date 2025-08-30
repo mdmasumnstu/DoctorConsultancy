@@ -1,0 +1,45 @@
+.specialties-container {
+    background-color: #EEF5FF; 
+    padding: 30px; 
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
+    max-width: 1200px; 
+    margin: 40px auto;
+}
+
+.specialties-container h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #080000;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.specialties-container p {
+    font-size: 16px;
+    color: #0b0000;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.specialty-item {
+    margin-bottom: 25px;
+}
+
+.specialty-item h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #080000;
+    margin: 0 0 5px 0;
+    text-align: center;
+    line-height: 1px;
+}
+
+.specialty-item p {
+    font-size: 16px;
+    color: #0c0000;
+    margin: 0;
+    line-height: 1.5;
+    text-align: justify;
+}

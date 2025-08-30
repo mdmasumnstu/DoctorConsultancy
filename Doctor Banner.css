@@ -1,0 +1,145 @@
+.doctor-banner-container {
+  font-family: 'Inter', sans-serif;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f0f8ff; 
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.doctor-banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.doctor-text-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #002d62;
+  line-height: 1.2;
+}
+
+.app-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.3;
+}
+
+.doctor-image-slider-wrapper {
+  flex: 1;
+  position: relative;
+  min-width: 400px;
+  max-width: 500px;
+  overflow: hidden;
+  border-radius: 15px;
+  height: 350px; /* Adjust as needed */
+}
+
+.doctor-image-slider-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.doctor-image-slide {
+  min-width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+}
+
+.slider-dots-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.slider-dot {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-dot.active {
+  background-color: #007bff;
+}
+
+.doctor-info-section {
+  flex: 1;
+  min-width: 250px;
+  background-color: #e6f2ff; 
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.info-icon {
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+.trusted-by-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+  background-color: #d1e7dd; 
+  border-radius: 50px;
+  padding: 10px 20px;
+}
+
+.trusted-by-icon {
+  font-size: 1.5rem;
+  color: #28a745;
+}
+
+.consult-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s;
+}
+
+.consult-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .doctor-banner-content {
+    flex-direction: column;
+  }
+}

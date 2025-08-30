@@ -1,0 +1,158 @@
+
+
+
+/* Container for the entire section */
+.homepage-section-wrapper {
+    /* Reduced vertical padding to make the overall section shorter */
+    padding: 10px 0; 
+    
+}
+
+.homepage-section-heading {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 15px 10px 15px; /* Reduced bottom margin */
+    color: #333;
+}
+
+---
+
+/* Horizontal scroll container and list styling */
+.our-doctor-slider {
+    position: relative;
+    overflow: hidden;
+    padding: 0 15px;
+}
+
+.glide__track {
+    display: flex;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px; /* Reduced padding for the scrollbar */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.glide__track::-webkit-scrollbar {
+    display: none;
+}
+
+.glide__slides {
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
+
+.glide__slide {
+    flex-shrink: 0;
+    width: calc(25% - 7.5px);
+    min-width: 200px;
+    white-space: normal;
+}
+
+---
+
+/* Doctor card styling */
+.horizontal-list-card {
+    height: 100%;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.horizontal-list-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.doctor-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* This is the key change: reduced padding to make the card shorter */
+    padding: 8px;
+}
+
+.doctor-card__profile-picture {
+    width: 50px; /* Even smaller profile picture */
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 6px; /* Reduced margin */
+    border: 2px solid #007BFF;
+}
+
+.doctor-card__profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.doctor-card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.doctor-card__name {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 2px 0;
+    color: #333;
+}
+
+.doctor-card__content p {
+    margin: 0;
+    font-size: 11px; /* Slightly smaller font for a compact look */
+    color: #666;
+    line-height: 1.2;
+}
+
+
+
+/* Navigation button styling */
+.slider-controls {
+    position: absolute;
+    top: 50%;
+    width: calc(100% - 30px);
+    left: 15px;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+    z-index: 10;
+}
+
+.slider-back,
+.slider-next {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    width: 28px; /* Slightly smaller button size */
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s;
+    pointer-events: auto;
+}
+
+.slider-back:hover,
+.slider-next:hover {
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.slider-back svg,
+.slider-next svg {
+    fill: #555;
+    width: 16px; /* Smaller icon size */
+    height: 16px;
+}

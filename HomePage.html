@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Free Doctor</title>
+    <link rel="stylesheet" type="text/css" href="HomePage.css">
+    <link rel="stylesheet" type="text/css" href="Footer.css">
+    <link rel="stylesheet" type="text/css" href="Search_Section.css">
+    <link rel="stylesheet" type="text/css" href="HomePage Feature.css">
+
+
+    <link rel="stylesheet" type="text/css" href="VideoConsultCard.css">
+    <link rel="stylesheet" type="text/css" href="OurDoctor.css">
+    <link rel="stylesheet" type="text/css" href="OurTopDoctor.css">
+    <link rel="stylesheet" type="text/css" href="Top Specialities.css">
+    <link rel="stylesheet" type="text/css" href="HomePageSpecialtiesContainer.css">
+
+    <script src="HomePage.js" defer></script>
+    <script src="OurTopDoctor.js" defer></script>
+    <script src="Top Specialities.js" defer></script>
+    <script src="HomePage Feature.js" defer></script>
+
+    <link rel="stylesheet" type="text/css" href="FAQs.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="HomePageSpecialtiesContainer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!--Start Nav Bar-->
+  <!-- Navbar -->
+  <div class="navbarclass"> 
+    <nav class="navbar">
+      <!-- Logo -->
+      <a href="#" class="logo-link">
+        <img src="/Image For Homepage/OurFreeDoctor.png" alt="Our Free Doctor Logo">
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Nav Links -->
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Program Care</a></li>
+        <li><a href="#">Consultation</a></li>
+        <li><a href="#">Booking</a></li>
+        <li><a href="#">Blood Donor</a></li>
+
+        <!-- Department Dropdown -->
+        <li class="dropdown">
+          <a href="#">Department ▾</a>
+          <ul>
+            <li><a href="#">Asthma</a></li>
+            <li><a href="#">TB</a></li>
+            <li><a href="#">COPD</a></li>
+            <li><a href="#">Physical Medicine</a></li>
+            <li><a href="#">Surgery Pain</a></li>
+            <li><a href="#">Gynae</a></li>
+            <li><a href="#">Cancer</a></li>
+            <li><a href="#">Paediatrics</a></li>
+            <li><a href="#">Orthopaedics</a></li>
+            <li><a href="#">Dental</a></li>
+            <li><a href="#">Eye</a></li>
+          </ul>
+        </li>
+
+        <!-- Login/Signup Dropdown -->
+        <li class="dropdown">
+          <a href="#">Login/Signup ▾</a>
+          <ul>
+            <li><a href="#">Patient</a></li>
+            <li><a href="#">Doctor</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+<!--End Nav Bar-->
+<!--Start Search Section-->
+
+<div class="hero-section">
+    <section class="search-section">
+        <form action="/search" method="get" class="search-container">
+            <input type="text" name="query" placeholder="Search by Doctor Name/Code or Department">
+            <button type="submit" class="search-button">
+                <img src="../Image For Homepage/Search Icon.webp" alt="Search" height="20">
+                <span>Search</span>
+            </button>
+        </form>
+    </section>
+</div>
+
+
+<!--End Search Section-->
+<!--Start Doctor Banner Section-->
+
+ <div class="feature-slider-container">
+        <a href="https://www.example.com/page1" target="_blank" class=" feature slide active">
+            <img src="../Image For Homepage/Doctor in first sliding.webp" alt="Image 1">
+        </a>
+        <a href="https://www.example.com/page2" target="_blank" class="feature slide">
+            <img src="../Image For Homepage/doctor second sliding.webp" alt="Image 2">
+        </a>
+        
+        <div class="feature-slider-dots">
+            <span class="feature dot active"></span>
+            <span class="feature dot"></span>
+        </div>
+    </div>
+    
+
+<!--End Doctor Banner Section-->
+<!--Start Book Appointment Section-->
+
+
+<div>
+<div class="BookAppointmentContainer">
+   <h1 class="BookAppointmentTitle">
+    Book your Appointment, whether 
+    <span class="in-person">in-person</span> or 
+    <span class="online">online</span>
+  </h1>
+</div>
+<div class="video-consult-card-container">
+  <div class="video-consult-card">
+    <div class="video-consult-text-content">
+      <div class="video-consult-tag">VIDEO CONSULTATION</div>
+      <h2 class="video-consult-title">Looking for Immediate Medical Advice?</h2>
+      <p class="video-consult-description">Talk to a doctor within 15 minutes</p>
+      <button class="consult-now-button">Consult Now</button>
+    </div>
+    <div class="video-consult-image-container">
+      <img src="../Image For Homepage/Consult Now Doctor Patient Image.webp" alt="A smiling doctor with a stethoscope" class="video-consult-image">
+    </div>
+  </div>
+</div>
+</div>
+
+<!--End Video Consultation Card-->
+<!--Start Top Specialties Section-->
+
+<div>
+<section class="specialties-section">
+  <div class="header">
+    <div>
+      <h2>Top Specialties</h2>
+      <p>People have been looking for these specialties.</p>
+    </div>
+    <button class="view-all">VIEW ALL</button>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <img src="../Image For Homepage/primary-care-and-general-medicine.png" alt="">
+      <p>Primary Care & General Medicine</p>
+    </div>
+    <div class="card">
+      <img src="../Image For Homepage/Gynecologist.jpg" alt="">
+      <p>OB-GYN's & Women's Health</p>
+    </div>
+    <div class="card">
+      <img src="../Image For Homepage/pediatrics.png" alt="">
+      <p>Pediatrics</p>
+    </div>
+    <div class="card">
+      <img src="../Image For Homepage/diabetes-and-endocrinology.png" alt="">
+      <p>Diabetes & Endocrinology</p>
+    </div>
+    <div class="card">
+      <img src="../Image For Homepage/Eye.jpeg" alt="">
+      <p>Eye & Vision Doctor</p>
+    </div>
+    <div class="card">
+      <img src="../Image For Homepage/cardiologyst.jpg" alt="">
+      <p>Heart & Cardiology</p>
+    </div>
+    <div class="card">
+      <img src="../Image For Homepage/skin-and-dermatology.png" alt="">
+      <p>Skin & Dermatology</p>
+    </div>
+    <div class="card">
+      <img src="../Image For Homepage/lungs-chest-and-pulmonology.png" alt="">
+      <p>Lungs, Chest & Pulmonology</p>
+    </div>
+    <div class="card">
+      <img src="../Image For Homepage/internal-medicine.png" alt="">
+      <p>Stomach, Digestion & Gastroenterology</p>
+    </div>
+    <div class="card">
+      <img src="../Image For Homepage/ENT.jpg" alt="">
+      <p>Ears, Nose & Throat</p>
+    </div>
+    <div class="card">
+      <img src="../Image For Homepage/Kidny.jpg" alt="">
+      <p>Kidney & Urine</p>
+    </div>
+    <div class="card">
+      <img src="../Image For Homepage/Neuro-Medicine.jpg" alt="">
+      <p>Brain & Nerves</p>
+    </div>
+  </div>
+</section>
+</div>
+
+<!--End Top Specialties Section-->
+<!--Start Our Top Doctor Section-->
+
+<div class="top-doctor-slider-container">
+    <h1 class="our-top-doctor">Meet The Top and Bes Rated Doctors</h1>
+
+    <div class="top-doctor-slider" aria-label="doctor slider example">
+      <div class="top-doctor-slider-viewport" id="top-doctor-viewport">
+        <div class="top-doctor-slider-track" id="top-doctor-track">
+          <div class="top-doctor-card" data-id="1">
+            <div class="top-doctor-img" style="background-image: url('../Image For Homepage/dr-humayun-60d21b128ad7a.jpg');"></div>
+            <div class="top-doctor-title">Dr. Humayun</div>
+            <div class="top-doctor-desc">General Physician Dermatology & VenerologyInternal 
+              MedicinePediatricsOrthopedic SurgeryDiabetes & Metabolism( MBBS, FCPS (Orthopedics) FP, PGT (Skin &VD), PGT(Medicine), CMU(Ultra) )
+      <br>4 years experience overall</div>
+            <div class="top-doctor-consult-row">
+              <div class="top-doctor-consult">Appointment</div>
+              <button class="top-doctor-btn">View Profile</button>
+            </div>
+          </div>
+
+          <div class="top-doctor-card" data-id="2">
+            <div class="top-doctor-img" style="background-image: url('../Image For Homepage/dr-hitesh-viradiya-610d46ab0cf9b.jpg');"></div>
+            <div class="top-doctor-title">Dr. Hitesh Viradiya</div>
+            <div class="top-doctor-desc">BMDC No: A-87953
+
+General Physician Family Medicine Pediatrics ( MBBS, MPH (NSU);<br> MCGP(Paediatric & Allied); PGT(Paediatric); PGPN (Paediatric Nutrition);<br> Special training on Mental Health and NCD )
+ <br>7 years experience overall</div>
+            <div class="top-doctor-consult-row">
+              <div class="top-doctor-consult">Appointment</div>
+              <button class="top-doctor-btn">View Profile</button>
+            </div>
+          </div>
+
+          <div class="top-doctor-card" data-id="3">
+            <div class="top-doctor-img" style="background-image: url('../Image For Homepage/DR-Mahmud-Masum-Attar.jpg');"></div>
+            <div class="top-doctor-title">Dr. Mahmud Masum Attar</div>
+            <div class="top-doctor-desc">BMDC No: 31306
+<br>Aesthetic Dermatology & CosmetologyDermatology & Venerology( MBBS,FCPS )
+<br>18 years experience overall</div>
+            <div class="top-doctor-consult-row">
+              <div class="top-doctor-consult">Appointment</div>
+              <button class="top-doctor-btn">View Profile</button>
+            </div>
+          </div>
+
+          <div class="top-doctor-card" data-id="4">
+            <div class="top-doctor-img" style="background-image: url('../Image For Homepage/dr-murali-reddy-61079374694e8.jpg');"></div>
+            <div class="top-doctor-title">Dr. Murali Reddy</div>
+            <div class="top-doctor-desc">BMDC No: A 71917<br>
+
+Internal Medicine Critical Care Medicine Oncology Cardiology Family<br> Medicine Pulmonology Pediatrics Geriatrics Dermatology & Venerology <br>( MBBS, FCPS(O/C), MCPS, FCGP, CCD, D-Asthma, DMU.DOC, PGT )
+<br>12 years experience overall</div>
+            <div class="top-doctor-consult-row">
+              <div class="top-doctor-consult">Appointment</div>
+              <button class="top-doctor-btn">View Profile</button>
+            </div>
+          </div>
+
+          <div class="top-doctor-card" data-id="5">
+            <div class="top-doctor-img" style="background-image: url('../Image For Homepage/dr-prateeksha-b-s-67b0b080e1213.jpg');"></div>
+            <div class="top-doctor-title">Dr. Prateeksha B S</div>
+            <div class="top-doctor-desc">BMDC No: A-81772<Br>
+General Physician Obstetrics & Gynecology ( MBBS, BCS, CMU, ADMU )
+<br>5 years experience overall</div>
+            <div class="top-doctor-consult-row">
+              <div class="top-doctor-consult">Appointment</div>
+              <button class="top-doctor-btn">View Profile</button>
+            </div>
+          </div>
+
+          <div class="top-doctor-card" data-id="6">
+            <div class="top-doctor-img" style="background-image: url('../Image For Homepage/dr-vivek-kumar-sahu-66b07a9a267d4.jpg');"></div>
+            <div class="top-doctor-title">Dr. Vivek Kumar</div>
+            <div class="top-doctor-desc">BMDC No: A 81537<br>
+Ear,Nose & Throat( MBBS,BCS,MS (O/C) )
+<br>7 years experience overall</div>
+            <div class="top-doctor-consult-row">
+              <div class="top-doctor-consult">Appointment</div>
+              <button class="top-doctor-btn">View Profile</button>
+            </div>
+          </div>
+
+          <div class="top-doctor-card" data-id="7">
+            <div class="top-doctor-img" style="background-image: url('../Image For Homepage/Dr.-Md.-Nurul-Alam.jpg');"></div>
+            <div class="top-doctor-title">Dr. Md. Nurul Alam</div>
+            <div class="top-doctor-desc">BMDC No: A 80060<br>
+            General Physician( MBBS,MD RESIDENT(DMCH), CMU(ULTRA),PGT(MEDICINE) )
+            <br>9 years experience overall</div>
+            <div class="top-doctor-consult-row">
+              <div class="top-doctor-consult">Appointment</div>
+              <button class="top-doctor-btn">View Profile</button>
+            </div>
+          </div>
+
+          <div class="top-doctor-card" data-id="8">
+            <div class="top-doctor-img" style="background-image: url('../Image For Homepage/DR.-ZIAUL-KARIM-226x223.jpg');"></div>
+            <div class="top-doctor-title">Dr. Ziaul Karim</div>
+            <div class="top-doctor-desc">BMDC No: 000abcd<br>
+              <br>Clinical Psychologist( M.Phil MS BSc )
+              <br>8 years experience overall</div>
+            <div class="top-doctor-consult-row">
+              <div class="top-doctor-consult">Appointment</div>
+              <button class="top-doctor-btn">View Profile</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="top-doctor-nav" role="toolbar" aria-hidden="false">
+        <button class="top-doctor-arrow left" id="prev" aria-label="Previous">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <button class="top-doctor-arrow right" id="next" aria-label="Next">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <div style="padding-top:6px;">
+        <div class="top-doctor-dots" id="top-doctor-dots" role="tablist" aria-label="Slide dots"></div>
+      </div>
+    </div>
+  </div>
+
+<!--End Our Top Doctor Section-->
+<!--Start Our Free Doctor Section-->
+
+    <div class="specialties-container">
+        <h3>Our Free Doctor: Best Patient Consulting Portal</h3>
+    <p>Are you struggling to find a trusted doctor for optimal medical care? Look no further; search on Our Free Doctor! As India's premier patient consulting portal, Our Free Doctor provides access to a database of over 1500 doctors with expertise in diagnosing and treating conditions across various medical specialties. With Our Free Doctor, doctor consultations become effortless through a seamless appointment scheduling process, granting you quick access to highly experienced doctors in just a few clicks. At Our Free Doctor, we are building the future of healthcare delivery by providing expert medical care on the go.</p>
+    
+    <h3>Our Free Doctor Presence in Bangladesh</h3>
+    <p>Our Free Doctor currently boasts a network of 50+ clinics, 80+ partner hospitals, a panel of 400+ super specialist surgeons, and a database of over 1,500 doctors. Our presence spans 8 division in Bangladesh.</p>
+    
+    <p>We are continuously expanding our reach to serve people across the nation and beyond, providing them with holistic and seamless medical care. For expert medical care on the go, choose Our Free Doctor.</p>
+
+            <h3>Connect with Best Doctors in Bangladesh for Various Categories</h3>
+            <p>At Our Free Doctor, we are committed to delivering comprehensive patient care spanning various medical specialties.</p>
+
+            <div class="specialty-item">
+                <h4>Proctology</h4>
+                <p>Specializes in the diagnosis and treatment of disorders of the rectum and anus, including but not limited to hemorrhoids, anal fissures, and colorectal conditions.</p>
+            </div>
+            <div class="specialty-item">
+                <h4>Laparoscopy</h4>
+                <p>Involves the treatment of various abdominal and pelvic conditions using minimally invasive surgical procedures. These surgeries employ small incisions and a camera for diagnosis and treatment, resulting in a shorter recovery period.</p>
+            </div>
+            <div class="specialty-item">
+                <h4>Vascular</h4>
+                <p>Focuses on conditions affecting blood vessels, arteries, and veins, with deep vein thrombosis, peripheral artery disease, and varicose veins being the most common conditions.</p>
+            </div>
+            <div class="specialty-item">
+                <h4>Urology</h4>
+                <p>This specialty involves the diagnosis and treatment of conditions affecting the urinary tract and male reproductive system, including kidney stones, bladder and prostate issues, etc.</p>
+            </div>
+            <div class="specialty-item">
+                <h4>Gynecology</h4>
+                <p>This medical specialty deals with conditions of the female reproductive system such as ovarian cysts, uterine fibroids, and infertility. Pregnancy care is also an integral part of gynecology.</p>
+            </div>
+            <div class="specialty-item">
+                <h4>ENT</h4>
+                <p>Disorders of the ear, nose, and throat fall under this medical specialty. Common conditions addressed by ENT specialists include throat infections, sinusitis, hearing loss, congestion, and vertigo.</p>
+            </div>
+            <div class="specialty-item">
+                <h4>Aesthetics</h4>
+                <p>Cosmetic procedures aimed at enhancing a person's physical appearance are part of aesthetics. Some procedures include liposuction, tummy tuck, breast lift surgery, breast augmentation surgery, and rhinoplasty.</p>
+            </div>
+            <div class="specialty-item">
+                <h4>Dermatology</h4>
+                <p>Dermatology is a branch of medicine that deals in the diagnosis and treatment of conditions of the skin and hair. Some dermatological treatments include Botox, Derma Fillers, Face Thread Lift, and Hair Transplant.</p>
+            </div>
+            <div class="specialty-item">
+                <h4>Orthopedics</h4>
+                <p>Specialists in this field diagnose and treat musculoskeletal conditions affecting bones and muscles, such as joint pain, arthritis, and fractures.</p>
+            </div>
+            <div class="specialty-item">
+                <h4>Ophthalmology</h4>
+                <p>This specialty involves the management of treatments affecting eye health, ranging from refractive errors to more serious conditions such as cataracts and glaucoma.</p>
+            </div>
+            <div class="specialty-item">
+                <h4>Fertility</h4>
+                <p>This specialty focuses on the diagnosis and treatment of conditions of the reproductive system. In vitro fertilization and intrauterine insemination are some common fertility treatments offered under this specialty.</p>
+            </div>
+            <div class="specialty-item">
+                <h4>Weight Loss</h4>
+                <p>Weight loss involves safe and effective methods for achieving a healthy body weight. Bariatric Surgery and Intragastric Balloon treatment are examples of weight loss procedures.</p>
+            </div>
+            <div class="specialty-item">
+                <h4>Dentistry</h4>
+                <p>Dentistry encompasses diagnosis and treatment of diseases and conditions affecting the teeth and gums. Common treatments include braces, aligners, and dental implants.</p>
+            </div>
+        </div>
+
+<!--Our Free Doctor Section-->
+<!--Start FAQs Section-->
+
+        <div class="faq-container">
+        <h2>Frequently Asked Questions (FAQs):</h2>
+
+        <div class="faq-item">
+            <details>
+                <summary>How can I book an appointment with a doctor?</summary>
+                <p class="answer">You can easily book an appointment by navigating to our 'Booking' page and selecting your desired specialty, doctor, and a convenient time slot. You can choose for either an in-person or an online consultation.</p>
+            </details>
+        </div>
+
+        <div class="faq-item">
+            <details>
+                <summary>Is the online video consultation service reliable?</summary>
+                <p class="answer">Yes, our video consultation service is highly reliable. We use a secure and encrypted platform to ensure your privacy and provide a seamless communication experience with our doctors.</p>
+            </details>
+        </div>
+
+        <div class="faq-item">
+            <details>
+                <summary>How do I know if the doctors are qualified?</summary>
+                <p class="answer">All doctors on our platform are thoroughly vetted and are registered medical practitioners with years of experience in their respective fields. You can view their credentials and specialties on their profile pages.</p>
+            </details>
+        </div>
+
+        <div class="faq-item">
+            <details>
+                <summary>What is your cancellation policy?</summary>
+                <p class="answer">Appointments can be canceled up to 24 hours in advance for a full refund. For cancellations within 24 hours of the appointment, a cancellation fee may apply. Please check our terms and conditions for more details.</p>
+            </details>
+        </div>
+        
+        <div class="faq-item">
+            <details>
+                <summary>Can I get a prescription through video consultation?</summary>
+                <p class="answer">Yes, if a doctor deems it medically necessary, they can issue a digital prescription following your video consultation. The prescription will be available in your patient portal for you to download or print.</p>
+            </details>
+        </div>
+        
+        <div class="faq-item">
+            <details>
+                <summary>Do you offer emergency medical services?</summary>
+                <p class="answer">We are not an emergency service. For any medical emergency, please contact your local emergency services or visit the nearest hospital. Our platform is for non-emergency consultations and health advice.</p>
+            </details>
+        </div>
+    </div>
+
+<!--End FAQs Section-->
+<!--Start Footer Section-->
+
+    <div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column-left">
+                <div class="footer-logo">
+                    <img src="../Image For Homepage/OurFreeDoctor.png" alt="DocTime Logo">
+                </div>
+                <p>Our Free Doctor is the number 1 healthcare service provider in Bangladesh, based on one million downloads and ratings on the Play Store.</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone-alt"></i>09607796699</p>
+                    <p><i class="fas fa-envelope"></i>support@doctime.com.bd</p>
+                </div>
+
+                <div class="social-icons">
+                  <a href="#"><img src="../Image For Homepage/Facebook.webp" alt="Facebook"></a>
+                  <a href="#"><img src="../Image For Homepage/Twitter.webp" alt="Twitter"></a>
+                  <a href="#"><img src="../Image For Homepage/Linkedin.webp" alt="LinkedIn"></a>
+                  <a href="#"><img src="../Image For Homepage/Instagram.webp" alt="Instagram"></a>
+                  <a href="#"><img src="../Image For Homepage/Youtube.webp" alt="YouTube"></a>
+                </div>
+            </div>
+            <div class="footer-column-center">
+                <ul>
+                    <li><a href="#">Video Consultation</a></li>
+                    <li><a href="#">Health Plans</a></li>
+                    <li><a href="#">Data & Research</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Terms of Services</a></li>
+                    <li><a href="#">Hospital Partners</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">CareGlobal</a></li>
+                    <li><a href="#">Employers & NGOs</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Our Doctors</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Home Diagnostics</a></li>
+                    <li><a href="#">For Doctors</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Our Mission and Vision</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </footer>
+    </div>
+
+<!--End Footer Section-->
+</body>
+</html>

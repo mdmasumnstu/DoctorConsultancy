@@ -1,0 +1,126 @@
+/* Book Appointment Header */
+.BookAppointmentContainer {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  padding: 15px 10px 0; 
+  margin-top: 35px; 
+}
+
+.BookAppointmentTitle {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  line-height: 1.0;
+}
+
+.in-person {
+  color: #007bff; 
+}
+
+.online {
+  color: #6a0dad; /
+}
+
+/* Card Container */
+.video-consult-card-container {
+  max-width: 1500px;
+  margin: 0 auto; 
+  padding: 0 15px;
+}
+
+/* Card Layout */
+.video-consult-card {
+  display: flex;
+  background-color: #eaf4ff; 
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 180px; 
+  align-items: center; 
+}
+
+/* Text Section */
+.video-consult-text-content {
+  flex: 1;
+  padding: 20px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.video-consult-tag {
+  color: #8a2be2;
+  font-size: 0.75em;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.video-consult-title {
+  font-size: 1.6em;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.video-consult-description {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.consult-now-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 25px;
+  cursor: pointer;
+  width: fit-content;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+}
+
+.consult-now-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Image Section */
+.video-consult-image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* no extra padding */
+}
+
+.video-consult-image {
+  height: 250px;   /* match container height */
+  width: 700px;    /* keep aspect ratio */
+  object-fit: contain; 
+  display: block;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .BookAppointmentTitle {
+    font-size: 24px;
+  }
+
+  .video-consult-card {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .video-consult-text-content {
+    padding: 20px;
+    align-items: center;
+  }
+
+  .video-consult-image-container {
+    padding: 0;
+  }
+}

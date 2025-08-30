@@ -1,0 +1,146 @@
+/* Reset */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Container */
+.navbarclass {
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #032b88;
+   padding: 8px 0px;
+  height: 70px;
+  position: relative;
+  gap: 90px; /* লোগো এবং লিংকগুলোর মধ্যে গ্যাপ */
+}
+
+/* Logo */
+.logo-link img {
+  height: 60px;
+  width: auto;
+}
+
+/* Nav Links */
+.nav-links {
+  
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* লিংকগুলো বাম দিক থেকে শুরু হবে */
+  flex-wrap: wrap; /* প্রয়োজনে লিংকগুলো নিচের লাইনে চলে যাবে */
+  gap: 35px; /* প্রতিটি লিংকের মধ্যে সমান স্পেস */
+}
+
+.nav-links li {
+  position: relative;
+  
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+  transition: 0.3s;
+  
+}
+
+.nav-links a:hover {
+  background-color: #cdd404;
+  border-radius: 4px;
+
+}
+
+/* Dropdown Menu */
+.dropdown ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #032b88;
+  
+  list-style: none;
+  margin: 0;
+  padding: 5px 0;
+  min-width: 180px;
+  z-index: 100;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown ul li a {
+  display: block;
+  padding: 8px 12px;
+  font-size: 13px;
+  color: white;
+}
+
+.dropdown ul li a:hover {
+  background-color: #0441d4;
+  color: yellow;
+}
+
+/* Show dropdown on hover (desktop) */
+.dropdown:hover ul {
+  display: block;
+}
+
+/* Mobile Menu Button */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #032b88;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 15px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown ul {
+    position: static;
+    box-shadow: none;
+    background: #0039a6;
+  }
+
+  .dropdown ul li a {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,112 @@
+/* General section layout */
+.homepage-section-wrapper {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.homepage-section-heading {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Styles for the doctor cards */
+.horizontal-list-card {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.doctor-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.doctor-card__profile-picture img {
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  object-fit: cover;
+}
+
+.doctor-card__content {
+  flex-grow: 1;
+}
+
+.doctor-card__name {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.doctor-card__content p {
+  font-size: 14px;
+  color: #777;
+  margin: 2px 0;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Slider controls */
+.slider-controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.slider-back,
+.slider-next {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-back:hover,
+.slider-next:hover {
+  background-color: #f0f0f0;
+}
+
+.slider-back svg,
+.slider-next svg {
+  fill: #555;
+}
+
+/* Glide.js specific styles */
+.glide {
+  position: relative;
+  width: 100%;
+}
+
+.glide__track {
+  overflow: hidden;
+}
+
+.glide__slides {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.glide__slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  user-select: none;
+  margin-right: 16px;
+}
